@@ -1,0 +1,31 @@
+package src
+
+templ index() {
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <title>Kreditkartenprüfung</title>
+    </head>
+    <body>
+        <h1>Kreditkartenprüfung</h1>
+        <form action="/" method="GET">
+            <label for="cc_number">Kreditkartennummer:</label>
+            <input type="text" id="cc_number" name="cc_number"></input>
+            <button type="submit">Prüfen</button>
+        </form>
+
+    </body>
+    </html>
+}
+
+        // {{if .}}
+        //     {{if .}}
+        //         <p style="color: green;">Die Kreditkartennummer ist gültig.</p>
+        //     {{else}}
+        //         <p style="color: red;">Die Kreditkartennummer ist ungültig.</p>
+        //     {{end}}
+        // {{end}}
+
+        // <p data-testid={ component.IsValidLuhn() }>Die Kreditkartennummer ist gültig.</p>
+        // <p data-testid={ !component.IsValidLuhn() }>Die Kreditkartennummer ist ungültig.</p>
